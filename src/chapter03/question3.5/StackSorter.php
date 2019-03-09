@@ -1,7 +1,9 @@
 <?php
 
-class StackSorter {
-    public static function sort(array &$stack) {
+class StackSorter
+{
+    public static function sort(array &$stack)
+    {
         if (empty($stack)) {
             return;
         }
@@ -30,3 +32,8 @@ class StackSorter {
         } while ($unprocessedCount > 0);
     }
 }
+
+// my test
+// $test_arr = [7, 10, 5, 1, 3, 8, 12];
+// StackSorter::sort($test_arr);
+// print_r($test_arr);
